@@ -22,7 +22,7 @@ Nozzle size 0.4mm
 M73 P0 ; tell the firmware we're starting a build
 G130 X118 Y118 Z40 A118 B118  ; set vref's to default
 M140 S[first_layer_bed_temperature] ; set bed temp, don't wait
-M109 S[first_layer_temperature_1] T1 ; set nozzle temp, don't wait
+M109 S[first_layer_temperature_1] T0 ; set nozzle temp, don't wait
 T0 ; home on the right extruder
 G90 ; set positioning to absolute
 G28 X Y Z ; home XYZ at default home feedrates
